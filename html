@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daksh Verma — Data Scientist • Web Developer • Designer</title>
+  <meta name="description" content="Resume & portfolio of Daksh Verma — Data Science @ IIT Madras, Web Developer, Designer, building at the intersection of data • design • business." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;          /* slate-950 */
+      --panel: #0f172a;       /* slate-900 */
+      --muted: #94a3b8;       /* slate-400 */
+      --text: #e5e7eb;        /* gray-200 */
+      --accent: #22d3ee;      /* cyan-400 */
+      --accent-2: #a78bfa;    /* violet-400 */
+      --ring: rgba(34,211,238,0.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;          /* slate-50 */
+      --panel: #ffffff;
+      --muted: #475569;       /* slate-600 */
+      --text: #0f172a;        /* slate-900 */
+      --accent: #0ea5e9;      /* sky-500 */
+      --accent-2: #7c3aed;    /* violet-600 */
+      --ring: rgba(14,165,233,0.35);
+      --shadow: 0 8px 18px rgba(2,6,23,.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(124,58,237,.15), transparent 60%),
+                  radial-gradient(1000px 500px at 120% 10%, rgba(34,211,238,.12), transparent 55%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+    /* Navbar */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(12px);
+      background: color-mix(in oklab, var(--bg) 70%, transparent);
+      border-bottom: 1px solid color-mix(in oklab, var(--muted) 25%, transparent);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight: 700; letter-spacing: .2px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 0 6px var(--ring); }
+    .menu { display: flex; gap: 18px; flex-wrap: wrap; }
+    .menu a { font-weight: 500; color: var(--text); opacity: .85; }
+    .menu a:hover { opacity: 1; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 14px; border: 1px solid color-mix(in oklab, var(--accent) 45%, transparent);
+      background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 90%, transparent), color-mix(in oklab, var(--panel) 70%, transparent));
+      box-shadow: var(--shadow);
+      color: var(--text); text-decoration: none; font-weight: 600; letter-spacing: .3px;
+    }
+    .btn:hover { transform: translateY(-1px); }
+
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; padding: 40px 0 24px; }
+    .hero-card {
+      background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 92%, transparent), color-mix(in oklab, var(--panel) 70%, transparent));
+      border: 1px solid color-mix(in oklab, var(--muted) 20%, transparent);
+      border-radius: 22px; padding: 28px; box-shadow: var(--shadow);
+    }
+    .kicker { color: var(--accent); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 12px; }
+    h1 { margin: 8px 0 12px; font-size: clamp(28px, 5vw, 44px); line-height: 1.1; }
+    .lead { font-size: clamp(14px, 2.2vw, 18px); color: var(--muted); }
+    .quick { display:flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .chip { border:1px solid color-mix(in oklab, var(--muted) 25%, transparent); padding: 8px 12px; border-radius: 999px; font-size: 13px; color: var(--text); opacity:.9; }
+
+    .card {
+      background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 96%, transparent), color-mix(in oklab, var(--panel) 80%, transparent));
+      border: 1px solid color-mix(in oklab, var(--muted) 20%, transparent); border-radius: 18px; padding: 22px; box-shadow: var(--shadow);
+    }
+
+    /* Sections */
+    section { padding: 36px 0; }
+    .section-title { font-size: 22px; margin: 0 0 14px; letter-spacing:.2px; }
+    .muted { color: var(--muted); }
+
+    /* Grid */
+    .grid { display:grid; gap: 16px; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid-3 { grid-template-columns: 1fr; } .grid-2 { grid-template-columns: 1fr; } }
+
+    /* Timeline */
+    .timeline { border-left: 2px dashed color-mix(in oklab, var(--muted) 35%, transparent); padding-left: 18px; }
+    .tl { position: relative; margin-bottom: 18px; }
+    .tl::before { content: ""; position: absolute; left: -26px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 0 6px var(--ring); }
+
+    /* Footer */
+    footer { padding: 28px 0 56px; color: var(--muted); font-size: 14px; }
+
+    /* Print */
+    @media print {
+      .nav, .btn, .chip, .menu, .theme-toggle { display: none !important; }
+      section { page-break-inside: avoid; }
+      body { background: #fff; color: #000; }
+      .card, .hero-card { box-shadow: none; border: 1px solid #ddd; }
+    }
+  </style>
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daksh Verma",
+    "url": "https://dakshverma.github.io/",
+    "email": "mailto:dakshverma675@gmail.com",
+    "sameAs": [
+      "https://github.com/dakshverma",
+      "https://www.linkedin.com/in/your-linkedin"
+    ],
+    "jobTitle": "Data Scientist • Web Developer • Designer",
+    "affiliation": "IIT Madras (BS in Data Science & Applications)",
+    "knowsAbout": ["Data Science", "Web Development", "Brand Design", "Entrepreneurship"]
+  }
+  </script>
+</head>
+<body>
+  <div class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand"><span class="dot" aria-hidden="true"></span><span>Daksh Verma</span></div>
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions" style="display:flex; gap:10px; align-items:center;">
+        <button class="btn theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓 Theme</button>
+        <a class="btn" href="#contact" aria-label="Email Daksh">✉️ Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="wrap hero" id="top">
+    <div class="hero-card">
+      <div class="kicker">Data • Design • Business</div>
+      <h1>Building elegant solutions that ship.</h1>
+      <p class="lead">I’m <strong>Daksh Verma</strong> — BS in Data Science @ IIT Madras, a web developer and designer crafting products where <em>data</em> meets <em>design</em>. Currently building <strong>GopalGlories</strong> and <strong>DressMyPrincess</strong>, and consulting brands on web & identity.</p>
+      <div class="quick">
+        <span class="chip">Python • SQL • ML</span>
+        <span class="chip">HTML • CSS • JS • React</span>
+        <span class="chip">Figma • Canva</span>
+        <span class="chip">Git • GitHub • Hostinger</span>
+      </div>
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="https://github.com/dakshverma" target="_blank" rel="noopener">View GitHub →</a>
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn" href="#resume" onclick="window.print(); return false;">Print Resume</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="section-title" style="margin-top:0">Highlights</h3>
+      <ul class="muted" style="margin:0; padding-left:18px;">
+        <li>Led branding & design ops at <strong>Glogo by Sunny</strong> (2025)</li>
+        <li>Shipped e‑commerce & service websites end‑to‑end</li>
+        <li>Active in hackathons & GenAI initiatives</li>
+        <li>Open‑source & content creation on YouTube/Instagram</li>
+      </ul>
+      <div style="height:12px"></div>
+      <div class="grid grid-2">
+        <div>
+          <div class="kicker">Contact</div>
+          <div class="muted">📍 India • ✉️ <a href="mailto:dakshverma675@gmail.com">dakshverma675@gmail.com</a></div>
+        </div>
+        <div>
+          <div class="kicker">Links</div>
+          <div class="muted">💼 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a> • 💻 <a href="https://github.com/dakshverma" target="_blank" rel="noopener">GitHub</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>I’m a hands‑on builder who blends data science, full‑stack web, and brand design to create polished, high‑impact products. I love shipping fast, learning in public, and turning ideas into real, usable experiences.</p>
+        <p class="muted" style="margin-bottom:0">Currently exploring: practical ML for small businesses, design systems for fast landing pages, and faceless content workflows.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Data & ML</h3>
+          <p class="muted">Python, NumPy, Pandas, Stats, EDA, scikit‑learn, Git</p>
+        </div>
+        <div class="card">
+          <h3>Web</h3>
+          <p class="muted">HTML, CSS, JavaScript, React, Tailwind, WordPress, REST</p>
+        </div>
+        <div class="card">
+          <h3>Design & Biz</h3>
+          <p class="muted">Figma, Canva, Brand Systems, Copywriting, Client Ops</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid grid-3" id="projectGrid">
+        <!-- Static feature cards -->
+        <article class="card">
+          <h3>GopalGlories.com</h3>
+          <p class="muted">Multi‑service platform for affiliate + product sales. Designed brand, built site, and optimized for conversions.</p>
+          <p><a href="https://gopalglories.com" target="_blank" rel="noopener">Visit →</a></p>
+        </article>
+        <article class="card">
+          <h3>DressMyPrincess.com</h3>
+          <p class="muted">Fashion e‑commerce brand. Set up storefront, catalog, and payments on budget hosting.</p>
+          <p><a href="https://dressmyprincess.com" target="_blank" rel="noopener">Visit →</a></p>
+        </article>
+        <article class="card">
+          <h3>Reo Oaster</h3>
+          <p class="muted">Branding + supplier‑focused website for a house decorative firm. Clean, modern identity system.</p>
+          <p><a href="#" aria-disabled="true" onclick="return false;">Case study (soon)</a></p>
+        </article>
+      </div>
+      <div style="height:12px"></div>
+      <div class="card">
+        <div class="kicker">Live from GitHub</div>
+        <p class="muted">Latest public repositories (auto‑fetched). Shows activity and breadth of work.</p>
+        <div id="repoGrid" class="grid grid-3" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="card timeline">
+        <div class="tl">
+          <h3>Graphic & Branding Designer — Glogo by Sunny <span class="muted">(May 2025 – Present)</span></h3>
+          <p class="muted">Managed design trackers, branding assets, and client deliverables; crafted visuals for LED lightbox branding.</p>
+        </div>
+        <div class="tl">
+          <h3>Freelance Web Developer <span class="muted">(2024 – Present)</span></h3>
+          <p class="muted">Delivered e‑commerce and service websites end‑to‑end: discovery → design → dev → deploy → iterate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>IIT Madras — BS in Data Science & Applications</h3>
+          <p class="muted">2023 – Present</p>
+        </div>
+        <div class="card">
+          <h3>Self‑Learning & Certifications</h3>
+          <p class="muted">Open‑source contributions, MOOCs, and hackathons with focus on practical outcomes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>Open to collaborations, freelance work, and internships. The fastest way to reach me is email.</p>
+        <p><a class="btn" href="mailto:dakshverma675@gmail.com">✉️ dakshverma675@gmail.com</a> <a class="btn" href="https://github.com/dakshverma" target="_blank" rel="noopener">GitHub</a> <a class="btn" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="grid grid-2">
+      <div>
+        <div class="muted">© <span id="year"></span> Daksh Verma</div>
+      </div>
+      <div style="text-align:right">
+        <a class="muted" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle with persistence
+    const html = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) html.setAttribute('data-theme', saved);
+    toggle?.addEventListener('click', () => {
+      const now = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', now);
+      localStorage.setItem('theme', now);
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fetch and render recent repos (graceful fallback if blocked)
+    async function loadRepos() {
+      const grid = document.getElementById('repoGrid');
+      if (!grid) return;
+      try {
+        const res = await fetch('https://api.github.com/users/dakshverma/repos?sort=updated');
+        if (!res.ok) throw new Error('GitHub API error');
+        const repos = (await res.json())
+          .filter(r => !r.fork)
+          .sort((a,b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+          .slice(0, 6);
+        if (repos.length === 0) {
+          grid.innerHTML = '<p class="muted">No public repositories yet. Stay tuned.</p>';
+          return;
+        }
+        grid.innerHTML = '';
+        for (const r of repos) {
+          const el = document.createElement('article');
+          el.className = 'card';
+          el.innerHTML = `
+            <h3>${r.name}</h3>
+            <p class="muted">${r.description ? r.description.replace(/</g,'&lt;') : 'No description provided.'}</p>
+            <p class="muted">⭐ ${r.stargazers_count} • ⑂ ${r.forks_count} • Updated ${new Date(r.pushed_at).toLocaleDateString()}</p>
+            <p><a href="${r.html_url}" target="_blank" rel="noopener">Open on GitHub →</a></p>
+          `;
+          grid.appendChild(el);
+        }
+      } catch (e) {
+        document.getElementById('repoGrid').innerHTML = '<p class="muted">Couldn\'t load repositories right now.</p>';
+      }
+    }
+    loadRepos();
+  </script>
+</body>
+</html>
