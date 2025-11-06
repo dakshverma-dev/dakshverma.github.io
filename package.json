@@ -1,0 +1,31 @@
+{
+  "name": "daksh-verma-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website for Daksh Verma",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Ready for deployment to static hosting'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "full-stack-developer",
+    "web-development",
+    "responsive-design"
+  ],
+  "author": {
+    "name": "Daksh Verma",
+    "email": "daksh@example.com",
+    "url": "https://github.com/dakshverma"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dakshverma/portfolio.git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
