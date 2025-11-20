@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daksh Verma - Full Stack Developer</title>
-    <meta name="description" content="Daksh Verma - Full Stack Developer, creating innovative web solutions">
+    <title>Daksh Verma - Full-Stack Developer & AI Automation Founder</title>
+    <meta name="description" content="Daksh Verma - Full-stack dev & founder of Vercedo. IIT Madras Data Science student building websites, AI apps and automation solutions. 20+ projects, 80% conversion boost.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div id="particles-js"></div>
+
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">DV</a>
+                <a href="#home">
+                    <span class="logo-text">Daksh</span>
+                    <span class="logo-dot">.</span>
+                </a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link nav-link-button">Let's Talk</a></li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -44,157 +45,203 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Developer & Founder
+                </div>
                 <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Daksh Verma</span>
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-line highlight-name">Daksh Verma</span>
                 </h1>
-                <h2 class="hero-subtitle">Full Stack Developer</h2>
                 <p class="hero-description">
-                    Passionate about creating innovative web solutions and bringing ideas to life through code.
-                    Specializing in modern web technologies and user-centric design.
+                    I build exceptional digital experiences and AI-powered automation for startups and agencies.
+                    From conversion-focused websites to intelligent workflows, I ship products that work.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Work Together</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View My Work</span>
+                        <i class="fas fa-briefcase"></i>
+                    </a>
                 </div>
-                <div class="hero-social">
-                    <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="mailto:daksh@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="2">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="20">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="15">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="profile-placeholder">
-                    <i class="fas fa-user"></i>
+                <div class="hero-image-wrapper">
+                    <div class="profile-card">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="floating-tech tech-1"><i class="fab fa-react"></i></div>
+                    <div class="floating-tech tech-2"><i class="fab fa-node-js"></i></div>
+                    <div class="floating-tech tech-3"><i class="fab fa-python"></i></div>
+                    <div class="floating-tech tech-4"><i class="fab fa-js"></i></div>
                 </div>
             </div>
+        </div>
+        <div class="hero-social-sidebar">
+            <a href="https://github.com/dakshverma-dev" target="_blank" class="social-link" data-tooltip="GitHub" rel="noopener">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/daksh--verma" target="_blank" class="social-link" data-tooltip="LinkedIn" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/dakshvermadev" target="_blank" class="social-link" data-tooltip="Twitter" rel="noopener">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:dakshverma675@gmail.com" class="social-link" data-tooltip="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <div class="social-line"></div>
         </div>
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Developer, designer and founder combining code, design, and AI to solve real problems</p>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        I'm a passionate Full Stack Developer with a keen eye for detail and a love for creating 
-                        seamless user experiences. My journey in web development started with curiosity and has 
-                        evolved into a career dedicated to building innovative digital solutions.
-                    </p>
-                    <p>
-                        I specialize in developing scalable web applications using modern technologies and best practices. 
-                        Whether it's crafting elegant frontends or building robust backends, I thrive on solving complex 
-                        problems and turning ideas into reality.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>2+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>10+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Happy Clients</p>
-                        </div>
+                    <div class="about-intro">
+                        <h3>I'm a developer, designer and founder currently studying Data Science at IIT Madras.</h3>
                     </div>
+                    <p>
+                        I've partnered with 15+ clients to build modern websites and e-commerce platforms, boosting conversions through clean UX and performance optimisation. I founded Vercedo (AI & Web) to ship automation-first products and voice/agent solutions for teams that want to move faster.
+                    </p>
+                    <p>
+                        Whether it's a marketing site, a complex dashboard, or an AI workflow, I love blending product thinking with hands-on engineering. My goal is simple: launch experiences that feel beautiful, perform brilliantly, and actually move metrics.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Clean UX & performance optimisation</span></div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Automation-first thinking</span></div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Product & growth mindset</span></div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Design + code collaboration</span></div>
+                    </div>
+                    <a href="/mnt/data/Profile%20(2).pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                        <span>Download Resume (PDF)</span>
+                        <i class="fas fa-download"></i>
+                    </a>
                 </div>
-                <div class="about-image">
-                    <div class="about-placeholder">
-                        <i class="fas fa-code"></i>
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-placeholder"><i class="fas fa-laptop-code"></i></div>
+                        <div class="about-glow"></div>
+                    </div>
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                            <h4 class="counter-value" data-target="2">0</h4>
+                            <p>2+ Years experience (web/dev & freelancing)</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                            <h4 class="counter-value" data-target="20">0</h4>
+                            <p>20+ Projects completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-users"></i></div>
+                            <h4 class="counter-value" data-target="15">0</h4>
+                            <p>15+ Happy clients</p>
+                        </div>
+                        <div class="stat-card award-card">
+                            <div class="stat-icon"><i class="fas fa-medal"></i></div>
+                            <h4>3rd place</h4>
+                            <p>Innov8 3.0 - Eightfold AI Hackathon</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I use to bring ideas to life</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="frontend"><i class="fas fa-palette"></i><span>Frontend</span></button>
+                    <button class="tab-btn" data-tab="backend"><i class="fas fa-server"></i><span>Backend</span></button>
+                    <button class="tab-btn" data-tab="ai"><i class="fas fa-robot"></i><span>AI & Data</span></button>
+                    <button class="tab-btn" data-tab="tools"><i class="fas fa-tools"></i><span>Tools</span></button>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-tab active" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML5</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 95%"></div></div><span class="skill-percentage">95%</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h4>CSS3 / SASS</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 92%"></div></div><span class="skill-percentage">92%</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-js"></i></div><h4>JavaScript</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 90%"></div></div><span class="skill-percentage">90%</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-react"></i></div><h4>React</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 88%"></div></div><span class="skill-percentage">88%</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-vuejs"></i></div><h4>Vue.js</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 85%"></div></div><span class="skill-percentage">85%</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-bootstrap"></i></div><h4>Tailwind CSS</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 90%"></div></div><span class="skill-percentage">90%</span></div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
+                    <div class="skills-tab" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-react"></i></div><h4>Next.js</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 90%"></div></div><span class="skill-percentage">Strong | Multi-project</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-node-js"></i></div><h4>Node.js</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 85%"></div></div><span class="skill-percentage">Production-ready APIs</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-layer-group"></i></div><h4>Headless CMS</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 82%"></div></div><span class="skill-percentage">WordPress & custom</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>Databases</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 80%"></div></div><span class="skill-percentage">SQL & NoSQL</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><h4>REST APIs</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 88%"></div></div><span class="skill-percentage">Auth, caching, testing</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-sync"></i></div><h4>CI/CD Workflows</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 78%"></div></div><span class="skill-percentage">GitHub Actions, Vercel</span></div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
+                    <div class="skills-tab" id="ai">
+                        <div class="skills-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-python"></i></div><h4>Python (Data)</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 88%"></div></div><span class="skill-percentage">Analysis & automation</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-chart-area"></i></div><h4>Viz & Forecasting</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 84%"></div></div><span class="skill-percentage">Prophet, dashboards</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-microchip"></i></div><h4>GenAI Prototyping</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 82%"></div></div><span class="skill-percentage">Gemini + Streamlit</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-headset"></i></div><h4>Voice & Agent flows</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 80%"></div></div><span class="skill-percentage">Automation-first demos</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>Data Pipelines</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 78%"></div></div><span class="skill-percentage">ETL + APIs</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-brain"></i></div><h4>AI Experimentation</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 76%"></div></div><span class="skill-percentage">Rapid proof-of-concepts</span></div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-paint-brush"></i>
-                            <span>UI/UX Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>SEO</span>
+                    </div>
+                    <div class="skills-tab" id="tools">
+                        <div class="skills-grid">
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-git-alt"></i></div><h4>Git & GitHub</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 92%"></div></div><span class="skill-percentage">Ship & review fast</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-docker"></i></div><h4>Docker</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 80%"></div></div><span class="skill-percentage">Local + cloud dev</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-aws"></i></div><h4>AWS Basics</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 75%"></div></div><span class="skill-percentage">Lambda, S3, Amplify</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-cloud-upload-alt"></i></div><h4>Vercel & Netlify</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 88%"></div></div><span class="skill-percentage">Zero-downtime deploys</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fas fa-tachometer-alt"></i></div><h4>Performance</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 90%"></div></div><span class="skill-percentage">Core Web Vitals</span></div>
+                            <div class="skill-card"><div class="skill-icon"><i class="fab fa-figma"></i></div><h4>Design Collaboration</h4><div class="skill-progress"><div class="progress-bar" style="--progress: 85%"></div></div><span class="skill-percentage">Figma, product reviews</span></div>
                         </div>
                     </div>
                 </div>
@@ -202,168 +249,514 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Check out some of my latest work</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI + Automation</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="commerce">E-commerce</button>
+                <button class="filter-btn" data-filter="client">Client Work</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="ai">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
+                        <div class="project-placeholder gradient-1"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <div class="project-overlay">
+                            <a href="https://dakshverma.vercedo.com/" class="overlay-link" title="View Live" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dakshverma-dev" class="overlay-link" title="View Code" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard.</p>
+                        <div class="project-header"><span class="project-category">AI Image Generator</span><span class="project-date">2025</span></div>
+                        <h3>GenAI Image Generator (API + UI)</h3>
+                        <p>Built an image generation experience integrating GenAI APIs with prompt handling UI, moderation rules, and post-processing to keep results consistent with brand art direction.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
+                            <span><i class="fab fa-react"></i> Next.js</span>
+                            <span><i class="fab fa-node-js"></i> Node.js</span>
+                            <span><i class="fas fa-robot"></i> GenAI APIs</span>
+                            <span><i class="fas fa-cloud"></i> Vercel</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <div class="project-stats">
+                            <div class="stat-item"><i class="fas fa-wand-magic"></i><span>Prompt presets</span></div>
+                            <div class="stat-item"><i class="fas fa-shield-alt"></i><span>Safeguards baked-in</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="data">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-tasks"></i>
+                        <div class="project-placeholder gradient-2"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-overlay">
+                            <a href="https://dakshverma.vercedo.com/" class="overlay-link" title="View Live" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dakshverma-dev" class="overlay-link" title="View Code" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team features.</p>
+                        <div class="project-header"><span class="project-category">Data Science</span><span class="project-date">2024</span></div>
+                        <h3>COVID-19 Data Analysis</h3>
+                        <p>Designed a Python + Prophet pipeline to clean national COVID datasets, run forecasting, and publish actionable dashboards that helped stakeholders plan inventory and staffing.</p>
                         <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
-                            <span>Socket.io</span>
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-chart-area"></i> Prophet</span>
+                            <span><i class="fas fa-database"></i> Pandas</span>
+                            <span><i class="fas fa-sitemap"></i> Streamlit</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <div class="project-stats">
+                            <div class="stat-item"><i class="fas fa-bolt"></i><span>Realtime refresh</span></div>
+                            <div class="stat-item"><i class="fas fa-lightbulb"></i><span>Actionable insights</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="commerce">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-bar"></i>
+                        <div class="project-placeholder gradient-3"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="project-overlay">
+                            <a href="https://dakshverma.vercedo.com/" class="overlay-link" title="Case Study" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dakshverma-dev" class="overlay-link" title="View Notes" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Analytics Dashboard</h3>
-                        <p>A comprehensive analytics dashboard with data visualization, real-time metrics, and customizable reports.</p>
+                        <div class="project-header"><span class="project-category">E-commerce Conversion Boost</span><span class="project-date">2024</span></div>
+                        <h3>E-commerce Conversion Boost</h3>
+                        <p>Redesigned a merchant's storefront, clarified product storytelling, and rebuilt checkout UX. Result: measurable conversion lift with faster page speeds and deeper analytics.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>D3.js</span>
-                            <span>Python</span>
-                            <span>Flask</span>
+                            <span><i class="fab fa-react"></i> Remix / React</span>
+                            <span><i class="fas fa-credit-card"></i> Stripe</span>
+                            <span><i class="fas fa-database"></i> Supabase</span>
+                            <span><i class="fas fa-chart-line"></i> GA4</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <div class="project-stats">
+                            <div class="stat-item"><i class="fas fa-arrow-trend-up"></i><span>80% CVR lift</span></div>
+                            <div class="stat-item"><i class="fas fa-tachometer-alt"></i><span>Sub-second loads</span></div>
                         </div>
                     </div>
+                </div>
+                <div class="project-card" data-category="client">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-4"><i class="fas fa-layer-group"></i></div>
+                        <div class="project-overlay">
+                            <a href="https://dakshverma.vercedo.com/" class="overlay-link" title="View Portfolio" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dakshverma-dev" class="overlay-link" title="View Code" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header"><span class="project-category">20+ Client Websites</span><span class="project-date">2023 - 2025</span></div>
+                        <h3>20+ Client Websites</h3>
+                        <p>Landing pages, SaaS dashboards, e-commerce builds, and brand refreshes - shipped end-to-end from research and wireframes through deployment and training.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-react"></i> React / Next.js</span>
+                            <span><i class="fas fa-server"></i> Node / APIs</span>
+                            <span><i class="fas fa-cloud"></i> Vercel & Netlify</span>
+                            <span><i class="fab fa-figma"></i> Figma</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item"><i class="fas fa-hands-helping"></i><span>15+ happy clients</span></div>
+                            <div class="stat-item"><i class="fas fa-rocket"></i><span>Ship-ready playbooks</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/dakshverma-dev" target="_blank" class="btn btn-primary" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    <span>View All on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">How I can help bring your ideas to life</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, performant web applications using modern frameworks and best practices.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Web Applications</li>
+                        <li><i class="fas fa-check"></i> Progressive Web Apps</li>
+                        <li><i class="fas fa-check"></i> API Development</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Automation & AI</h3>
+                    <p>Prototyping agent workflows, voice experiences, and AI copilots that supercharge teams.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Voice & agent demos</li>
+                        <li><i class="fas fa-check"></i> GenAI product spikes</li>
+                        <li><i class="fas fa-check"></i> Workflow automation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive, user-centered interfaces that enhance user experience and engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+                        <li><i class="fas fa-check"></i> Design Systems</li>
+                        <li><i class="fas fa-check"></i> User Research</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3>SEO & Performance</h3>
+                    <p>Optimizing websites for search engines and ensuring lightning-fast load times.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Technical SEO</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check"></i> Core Web Vitals</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey and achievements</p>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"><div class="timeline-dot"></div><div class="timeline-icon"><i class="fas fa-briefcase"></i></div></div>
                     <div class="timeline-content">
-                        <h3>Full Stack Developer</h3>
-                        <h4>Tech Solutions Inc.</h4>
-                        <span class="timeline-date">2022 - Present</span>
-                        <p>Developed and maintained multiple web applications, implemented new features, and optimized performance.</p>
+                        <div class="timeline-badge">Current</div>
+                        <h3>Founder</h3>
+                        <h4>Vercedo (AI & Web)</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Sep 2025 - Present | Delhi, India</span>
+                        <p>Founded Vercedo to build automation-first websites, AI tooling, and conversational agent demos for forward-looking teams.</p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check-circle"></i> Lead product design, dev, hosting, and client delivery end-to-end</li>
+                            <li><i class="fas fa-check-circle"></i> Ship voice/agent experiences that showcase AI-first workflows</li>
+                        </ul>
+                        <div class="timeline-skills"><span>Strategy</span><span>Next.js</span><span>AI Automation</span><span>Client Ops</span></div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"><div class="timeline-dot"></div><div class="timeline-icon"><i class="fas fa-laptop-code"></i></div></div>
                     <div class="timeline-content">
-                        <h3>Frontend Developer</h3>
-                        <h4>Digital Agency</h4>
-                        <span class="timeline-date">2021 - 2022</span>
-                        <p>Created responsive user interfaces and collaborated with design teams to implement pixel-perfect designs.</p>
+                        <h3>Design & Technology Lead</h3>
+                        <h4>Brewin Media Company</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Jul 2025 - Present | Pune</span>
+                        <p>Delivering client websites, marketing ecosystems, and technical workflows for a creative-first studio.</p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check-circle"></i> Led design/dev for multi-brand launches plus hosting + domain ops</li>
+                            <li><i class="fas fa-check-circle"></i> Produced brand assets and social creatives that kept campaigns on-message</li>
+                        </ul>
+                        <div class="timeline-skills"><span>Design Systems</span><span>WebOps</span><span>Hosting</span><span>Client Enablement</span></div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"><div class="timeline-dot"></div><div class="timeline-icon"><i class="fas fa-code"></i></div></div>
                     <div class="timeline-content">
-                        <h3>Junior Developer</h3>
-                        <h4>Startup Co.</h4>
-                        <span class="timeline-date">2020 - 2021</span>
-                        <p>Assisted in developing web applications and gained experience in modern web technologies.</p>
+                        <h3>Full Stack WebOps Developer</h3>
+                        <h4>Saranda House - IITM BS</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2025 - Present | IIT Madras</span>
+                        <p>Supporting the IITM BS community with reliable WebOps, deployments, and product improvements.</p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check-circle"></i> Deploy, maintain, and optimise apps serving the house/community</li>
+                            <li><i class="fas fa-check-circle"></i> Hardened monitoring and performance budgets for student-run tools</li>
+                        </ul>
+                        <div class="timeline-skills"><span>Next.js</span><span>DevOps</span><span>Performance</span><span>Support</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><div class="timeline-dot"></div><div class="timeline-icon"><i class="fas fa-bolt"></i></div></div>
+                    <div class="timeline-content">
+                        <h3>Design & Creative Manager</h3>
+                        <h4>Glogo</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> May 2025 - Jul 2025 | Pune</span>
+                        <p>Owned the creative pipeline for campaigns and refreshes.</p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check-circle"></i> Designed social creatives and marketing collateral with consistent branding</li>
+                            <li><i class="fas fa-check-circle"></i> Partnered with marketing to improve campaign output</li>
+                        </ul>
+                        <div class="timeline-skills"><span>Brand</span><span>Motion</span><span>Campaigns</span><span>Stakeholder Mgmt</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="credentials" class="credentials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements & Learning</span>
+                <h2 class="section-title">Education, Honors & Certifications</h2>
+                <p class="section-subtitle">Continuous growth across data science, AI, and product development</p>
+            </div>
+            
+            <!-- Featured Award -->
+            <div class="featured-award">
+                <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                <div class="award-content">
+                    <h3>🏆 3rd Place - Innov8 3.0</h3>
+                    <p class="award-event">The Eightfold AI Hackathon</p>
+                    <p class="award-description">Recognized for developing an automation-forward solution that demonstrated innovative AI integration and practical business value.</p>
+                </div>
+            </div>
+
+            <div class="credentials-grid">
+                <div class="credential-column">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="credential-card">
+                        <h4>Indian Institute of Technology, Madras</h4>
+                        <p>B.Sc. Data Science & Engineering</p>
+                        <span class="credential-date">Jun 2024 - Jul 2028</span>
+                    </div>
+                    <div class="credential-card">
+                        <h4>HarvardX (CS50x)</h4>
+                        <p>Computer Science</p>
+                        <span class="credential-date">Jan 2025 - Jun 2025</span>
+                    </div>
+                    <div class="credential-card">
+                        <h4>CBSE</h4>
+                        <p>High School (Non-Med + Med)</p>
+                        <span class="credential-date">2023 - 2024</span>
+                    </div>
+                </div>
+                <div class="credential-column certificates-column">
+                    <h3><i class="fas fa-certificate"></i> Certifications & Workshops</h3>
+                    <div class="certificates-carousel">
+                        <div class="certificates-track">
+                            <!-- Certificate Images -->
+                            <div class="certificate-item">
+                                <img src="Hack2skill-Isro.png" alt="Hack2skill ISRO Hackathon Certificate">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="National Space Hackathon 2025 Iitd.jpg" alt="National Space Hackathon 2025 IITD">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Lancaster University - Intro to Ar Vr Mr.png" alt="Lancaster University - Intro to AR VR MR">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Iitm Prototyping the Future_ Gen Ai Tools for Product Innovation Ss.png" alt="IITM Prototyping the Future - Gen AI Tools">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Iitm Workshop - Beyond Gps Ss.png" alt="IITM Workshop - Beyond GPS">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Skill Badge - Gcloud - Dev Genai App With Gemini and Streamlit.png" alt="Google Cloud - Dev GenAI App with Gemini & Streamlit">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Skill Badge- Gcloud - Prompt Design in Vertex Ai.png" alt="Google Cloud - Prompt Design in Vertex AI">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Skill Badge- Gcloud- Generative Ai With the Vertex Ai Gemini Api.png" alt="Google Cloud - Generative AI with Vertex AI Gemini API">
+                            </div>
+                            <!-- Duplicate set for seamless loop -->
+                            <div class="certificate-item">
+                                <img src="Hack2skill-Isro.png" alt="Hack2skill ISRO Hackathon Certificate">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="National Space Hackathon 2025 Iitd.jpg" alt="National Space Hackathon 2025 IITD">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Lancaster University - Intro to Ar Vr Mr.png" alt="Lancaster University - Intro to AR VR MR">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Iitm Prototyping the Future_ Gen Ai Tools for Product Innovation Ss.png" alt="IITM Prototyping the Future - Gen AI Tools">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Iitm Workshop - Beyond Gps Ss.png" alt="IITM Workshop - Beyond GPS">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Skill Badge - Gcloud - Dev Genai App With Gemini and Streamlit.png" alt="Google Cloud - Dev GenAI App with Gemini & Streamlit">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Skill Badge- Gcloud - Prompt Design in Vertex Ai.png" alt="Google Cloud - Prompt Design in Vertex AI">
+                            </div>
+                            <div class="certificate-item">
+                                <img src="Skill Badge- Gcloud- Generative Ai With the Vertex Ai Gemini Api.png" alt="Google Cloud - Generative AI with Vertex AI Gemini API">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="certificates-note"><i class="fas fa-info-circle"></i> Hover to pause auto-scroll</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Reviews</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Don't just take my word for it</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Daksh is an exceptional developer who delivered our project ahead of schedule. His attention to detail and technical expertise made all the difference."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info"><h4>Priya Sharma</h4><span>CEO, TechStart Solutions</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Working with Daksh transformed our vision into a beautiful, functional website that exceeded expectations."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info"><h4>Arjun Mehta</h4><span>Founder, Digital Innovations</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"He doesn't just execute; he solves problems, asks the right questions, and keeps everyone aligned. Working with Daksh felt like having an extended teammate rather than a freelancer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info"><h4>Ananya Patel</h4><span>Product Lead, Brewin Media</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>daksh@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 98765 43210</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Delhi, India</span>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+            <div class="section-header">
+                <span class="section-tag">Let's work</span>
+                <h2 class="section-title">Ready to Build?</h2>
+                <p class="section-subtitle">Whether it's a website, automation workflow, or product prototype -- let's ship it.</p>
+            </div>
+            <div class="contact-split">
+                <div class="contact-info-side">
+                    <h3>Project Fit</h3>
+                    <p>I usually partner with startups, agencies, and founders on:</p>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-check"></i><span>Conversion-focused marketing sites</span></li>
+                        <li><i class="fas fa-check"></i><span>E-commerce experiences or subscriptions</span></li>
+                        <li><i class="fas fa-check"></i><span>Automation + AI workflows, MVPs, and demos</span></li>
+                        <li><i class="fas fa-check"></i><span>Dashboards, internal tools, or design system builds</span></li>
+                    </ul>
+                    <div class="contact-info">
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><h4>Based in</h4><p>Delhi, India (remote-friendly)</p></div></div>
+                        <div class="info-item"><i class="fas fa-clock"></i><div><h4>Response time</h4><p>Within 24 hours</p></div></div>
+                        <div class="info-item"><i class="fas fa-calendar"></i><div><h4>Availability</h4><p>Booking new projects for Q1 2026</p></div></div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form-side">
+                    <h3>Drop me a message</h3>
+                    <form action="https://formspree.io/f/mvolbzll" method="POST">
+                        <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Daksh Verma" required></div>
+                        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="you@example.com" required></div>
+                        <div class="form-group"><label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="" disabled selected>Select a project type</option>
+                                <option value="website">Website / Landing page</option>
+                                <option value="app">Web app / Dashboard</option>
+                                <option value="automation">Automation / AI</option>
+                                <option value="consulting">Technical consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width"><label for="message">Project Details</label><textarea id="message" name="message" rows="4" placeholder="Share a quick overview, goals, and timelines." required></textarea></div>
+                        <button type="submit" class="btn btn-primary"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <section class="cta">
         <div class="container">
-            <p>&copy; 2024 Daksh Verma. All rights reserved.</p>
+            <div class="cta-content">
+                <div>
+                    <h2>Have a project or idea?</h2>
+                    <p>I'm currently booking new projects and collaborations. Let's turn your idea into a product people love.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="mailto:dakshverma675@gmail.com" class="btn btn-secondary"><i class="fas fa-envelope"></i><span>Email Me</span></a>
+                    <a href="https://cal.com/dakshverma" class="btn btn-primary" target="_blank" rel="noopener"><i class="fas fa-video"></i><span>Book a Call</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Daksh<span>Verma</span></h2>
+                    <p class="footer-tagline">Building digital experiences that matter</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/dakshverma-dev" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daksh--verma" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/dakshvermadev" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:dakshverma675@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">AI Automation</a></li>
+                            <li><a href="#services">UI/UX Design</a></li>
+                            <li><a href="#services">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <li><a href="#" data-cal-link="dakshverma/15min" data-cal-namespace="15min" data-cal-config='{"layout":"month_view"}'>Book a Call</a></li>
+                            <li><a href="https://github.com/dakshverma-dev" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/daksh--verma" target="_blank" rel="noopener">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Daksh Verma. All rights reserved.</p>
+                <p class="footer-tagline-bottom">Built with passion, shipped with precision.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    <!-- Cal.com embed script -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "15min", {origin:"https://app.cal.com"});
+      Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
 </body>
 </html>
